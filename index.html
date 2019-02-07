@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>reveal.js</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <style>
+    .slides p {
+      font-size: 1.6em !important;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<div class="reveal">
+
+  <div class="slides">
+
+    <section>
+      <h1>Gradle</h1>
+      <p>
+        <small><a href="http://yaodanzhang.com">Yaodan Zhang</a></small>
+      </p>
+    </section>
+
+    <section>
+      <p>
+        &ldquo; Just <span style="color: #e7ad52; ">Another</span> Build Tool ? &rdquo;
+      </p>
+    </section>
+
+    <section>
+      <p>
+        Code
+      </p>
+      <p>
+        <small>Just looks like configuration</small>
+      </p>
+    </section>
+
+    <section>
+      <section>
+        <p>
+          Maven v.s. Gradle
+        </p>
+      </section>
+      <section>
+        <p>
+          Flexibility
+        </p>
+      </section>
+      <section>
+        <p>
+          <a href="https://gradle.org/gradle-vs-maven-performance/" target="_blank">Performance</a>
+        </p>
+      </section>
+      <section>
+        <p>
+          User Experience
+        </p>
+      </section>
+      <section>
+        <p>
+          Build Lifecyle
+        </p>
+      </section>
+      <section>
+        <p>
+          Dependency Scopes
+        </p>
+      </section>
+      <section>
+        <p>
+          <a href="https://docs.gradle.org/current/userguide/migrating_from_maven.html" target="_blank">Migration</a> is
+          not a nightmare
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <section>
+        <p>
+          Show me the code
+        </p>
+      </section>
+      <section>
+        <p>
+          New Project
+        </p>
+      </section>
+      <section>
+        <p>
+          Simple Multi-Module Project
+        </p>
+      </section>
+      <section>
+        <p>
+          A Real Project
+        </p>
+      </section>
+      <section>
+        <p>
+          Build Lifecyle
+        </p>
+      </section>
+      <section>
+        <p>
+          On CI
+        </p>
+      </section>
+    </section>
+
+    <section>
+      <p>
+        All your need is <a href="https://docs.gradle.org/current/userguide/userguide.html" target="_blank">here</a>
+      </p>
+    </section>
+
+    <section style="text-align: left;">
+      <h2>Thanks</h2>
+    </section>
+
+  </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
